@@ -1,0 +1,9 @@
+|count4
+Q0 <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+rst_n => inst1.ACLR
+rst_n => inst.ACLR
+clk => inst1.CLK
+clk => inst.CLK
+Q1 <= inst.DB_MAX_OUTPUT_PORT_TYPE
+
+

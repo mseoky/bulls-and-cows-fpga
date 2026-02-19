@@ -1,0 +1,57 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "ascii7[0]",
+					"strict" : false
+				},
+				{
+					"name" : "ascii7[1]",
+					"strict" : false
+				},
+				{
+					"name" : "ascii7[2]",
+					"strict" : false
+				},
+				{
+					"name" : "ascii14[0]",
+					"strict" : false
+				},
+				{
+					"name" : "ascii14[1]",
+					"strict" : false
+				},
+				{
+					"name" : "ascii14[2]",
+					"strict" : false
+				},
+				{
+					"name" : "strike_count[0]",
+					"strict" : false
+				},
+				{
+					"name" : "strike_count[1]",
+					"strict" : false
+				},
+				{
+					"name" : "strike_count[2]",
+					"strict" : false
+				},
+				{
+					"name" : "ball_count[0]",
+					"strict" : false
+				},
+				{
+					"name" : "ball_count[1]",
+					"strict" : false
+				},
+				{
+					"name" : "ball_count[2]",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

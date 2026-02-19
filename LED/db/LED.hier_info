@@ -1,0 +1,16 @@
+|LED
+Green1 <= Correct.DB_MAX_OUTPUT_PORT_TYPE
+Correct => Green1.DATAIN
+Correct => Green2.DATAIN
+Correct => Green3.DATAIN
+Correct => Green4.DATAIN
+Correct => inst.IN0
+Green2 <= Correct.DB_MAX_OUTPUT_PORT_TYPE
+Green3 <= Correct.DB_MAX_OUTPUT_PORT_TYPE
+Green4 <= Correct.DB_MAX_OUTPUT_PORT_TYPE
+Red1 <= inst.DB_MAX_OUTPUT_PORT_TYPE
+Red2 <= inst.DB_MAX_OUTPUT_PORT_TYPE
+Red3 <= inst.DB_MAX_OUTPUT_PORT_TYPE
+Red4 <= inst.DB_MAX_OUTPUT_PORT_TYPE
+
+

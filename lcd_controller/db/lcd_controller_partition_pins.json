@@ -1,0 +1,573 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "lcd_rs",
+					"strict" : false
+				},
+				{
+					"name" : "lcd_e",
+					"strict" : false
+				},
+				{
+					"name" : "lcd_data[0]",
+					"strict" : false
+				},
+				{
+					"name" : "lcd_data[1]",
+					"strict" : false
+				},
+				{
+					"name" : "lcd_data[2]",
+					"strict" : false
+				},
+				{
+					"name" : "lcd_data[3]",
+					"strict" : false
+				},
+				{
+					"name" : "lcd_data[4]",
+					"strict" : false
+				},
+				{
+					"name" : "lcd_data[5]",
+					"strict" : false
+				},
+				{
+					"name" : "lcd_data[6]",
+					"strict" : false
+				},
+				{
+					"name" : "lcd_data[7]",
+					"strict" : false
+				},
+				{
+					"name" : "clk",
+					"strict" : false
+				},
+				{
+					"name" : "rst_n",
+					"strict" : false
+				},
+				{
+					"name" : "ascii8[0]",
+					"strict" : false
+				},
+				{
+					"name" : "ascii10[0]",
+					"strict" : false
+				},
+				{
+					"name" : "ascii9[0]",
+					"strict" : false
+				},
+				{
+					"name" : "ascii11[0]",
+					"strict" : false
+				},
+				{
+					"name" : "ascii12[0]",
+					"strict" : false
+				},
+				{
+					"name" : "ascii14[0]",
+					"strict" : false
+				},
+				{
+					"name" : "ascii13[0]",
+					"strict" : false
+				},
+				{
+					"name" : "ascii15[0]",
+					"strict" : false
+				},
+				{
+					"name" : "ascii0[0]",
+					"strict" : false
+				},
+				{
+					"name" : "ascii2[0]",
+					"strict" : false
+				},
+				{
+					"name" : "ascii1[0]",
+					"strict" : false
+				},
+				{
+					"name" : "ascii3[0]",
+					"strict" : false
+				},
+				{
+					"name" : "ascii4[0]",
+					"strict" : false
+				},
+				{
+					"name" : "ascii6[0]",
+					"strict" : false
+				},
+				{
+					"name" : "ascii5[0]",
+					"strict" : false
+				},
+				{
+					"name" : "ascii7[0]",
+					"strict" : false
+				},
+				{
+					"name" : "ascii8[1]",
+					"strict" : false
+				},
+				{
+					"name" : "ascii10[1]",
+					"strict" : false
+				},
+				{
+					"name" : "ascii9[1]",
+					"strict" : false
+				},
+				{
+					"name" : "ascii11[1]",
+					"strict" : false
+				},
+				{
+					"name" : "ascii12[1]",
+					"strict" : false
+				},
+				{
+					"name" : "ascii14[1]",
+					"strict" : false
+				},
+				{
+					"name" : "ascii13[1]",
+					"strict" : false
+				},
+				{
+					"name" : "ascii15[1]",
+					"strict" : false
+				},
+				{
+					"name" : "ascii0[1]",
+					"strict" : false
+				},
+				{
+					"name" : "ascii2[1]",
+					"strict" : false
+				},
+				{
+					"name" : "ascii1[1]",
+					"strict" : false
+				},
+				{
+					"name" : "ascii3[1]",
+					"strict" : false
+				},
+				{
+					"name" : "ascii4[1]",
+					"strict" : false
+				},
+				{
+					"name" : "ascii6[1]",
+					"strict" : false
+				},
+				{
+					"name" : "ascii5[1]",
+					"strict" : false
+				},
+				{
+					"name" : "ascii7[1]",
+					"strict" : false
+				},
+				{
+					"name" : "ascii0[2]",
+					"strict" : false
+				},
+				{
+					"name" : "ascii4[2]",
+					"strict" : false
+				},
+				{
+					"name" : "ascii8[2]",
+					"strict" : false
+				},
+				{
+					"name" : "ascii12[2]",
+					"strict" : false
+				},
+				{
+					"name" : "ascii2[2]",
+					"strict" : false
+				},
+				{
+					"name" : "ascii6[2]",
+					"strict" : false
+				},
+				{
+					"name" : "ascii10[2]",
+					"strict" : false
+				},
+				{
+					"name" : "ascii14[2]",
+					"strict" : false
+				},
+				{
+					"name" : "ascii1[2]",
+					"strict" : false
+				},
+				{
+					"name" : "ascii5[2]",
+					"strict" : false
+				},
+				{
+					"name" : "ascii9[2]",
+					"strict" : false
+				},
+				{
+					"name" : "ascii13[2]",
+					"strict" : false
+				},
+				{
+					"name" : "ascii3[2]",
+					"strict" : false
+				},
+				{
+					"name" : "ascii7[2]",
+					"strict" : false
+				},
+				{
+					"name" : "ascii11[2]",
+					"strict" : false
+				},
+				{
+					"name" : "ascii15[2]",
+					"strict" : false
+				},
+				{
+					"name" : "ascii8[3]",
+					"strict" : false
+				},
+				{
+					"name" : "ascii10[3]",
+					"strict" : false
+				},
+				{
+					"name" : "ascii9[3]",
+					"strict" : false
+				},
+				{
+					"name" : "ascii11[3]",
+					"strict" : false
+				},
+				{
+					"name" : "ascii12[3]",
+					"strict" : false
+				},
+				{
+					"name" : "ascii14[3]",
+					"strict" : false
+				},
+				{
+					"name" : "ascii13[3]",
+					"strict" : false
+				},
+				{
+					"name" : "ascii15[3]",
+					"strict" : false
+				},
+				{
+					"name" : "ascii0[3]",
+					"strict" : false
+				},
+				{
+					"name" : "ascii2[3]",
+					"strict" : false
+				},
+				{
+					"name" : "ascii1[3]",
+					"strict" : false
+				},
+				{
+					"name" : "ascii3[3]",
+					"strict" : false
+				},
+				{
+					"name" : "ascii4[3]",
+					"strict" : false
+				},
+				{
+					"name" : "ascii6[3]",
+					"strict" : false
+				},
+				{
+					"name" : "ascii5[3]",
+					"strict" : false
+				},
+				{
+					"name" : "ascii7[3]",
+					"strict" : false
+				},
+				{
+					"name" : "ascii8[4]",
+					"strict" : false
+				},
+				{
+					"name" : "ascii10[4]",
+					"strict" : false
+				},
+				{
+					"name" : "ascii9[4]",
+					"strict" : false
+				},
+				{
+					"name" : "ascii11[4]",
+					"strict" : false
+				},
+				{
+					"name" : "ascii12[4]",
+					"strict" : false
+				},
+				{
+					"name" : "ascii14[4]",
+					"strict" : false
+				},
+				{
+					"name" : "ascii13[4]",
+					"strict" : false
+				},
+				{
+					"name" : "ascii15[4]",
+					"strict" : false
+				},
+				{
+					"name" : "ascii0[4]",
+					"strict" : false
+				},
+				{
+					"name" : "ascii2[4]",
+					"strict" : false
+				},
+				{
+					"name" : "ascii1[4]",
+					"strict" : false
+				},
+				{
+					"name" : "ascii3[4]",
+					"strict" : false
+				},
+				{
+					"name" : "ascii4[4]",
+					"strict" : false
+				},
+				{
+					"name" : "ascii6[4]",
+					"strict" : false
+				},
+				{
+					"name" : "ascii5[4]",
+					"strict" : false
+				},
+				{
+					"name" : "ascii7[4]",
+					"strict" : false
+				},
+				{
+					"name" : "ascii8[5]",
+					"strict" : false
+				},
+				{
+					"name" : "ascii10[5]",
+					"strict" : false
+				},
+				{
+					"name" : "ascii9[5]",
+					"strict" : false
+				},
+				{
+					"name" : "ascii11[5]",
+					"strict" : false
+				},
+				{
+					"name" : "ascii12[5]",
+					"strict" : false
+				},
+				{
+					"name" : "ascii14[5]",
+					"strict" : false
+				},
+				{
+					"name" : "ascii13[5]",
+					"strict" : false
+				},
+				{
+					"name" : "ascii15[5]",
+					"strict" : false
+				},
+				{
+					"name" : "ascii0[5]",
+					"strict" : false
+				},
+				{
+					"name" : "ascii2[5]",
+					"strict" : false
+				},
+				{
+					"name" : "ascii1[5]",
+					"strict" : false
+				},
+				{
+					"name" : "ascii3[5]",
+					"strict" : false
+				},
+				{
+					"name" : "ascii4[5]",
+					"strict" : false
+				},
+				{
+					"name" : "ascii6[5]",
+					"strict" : false
+				},
+				{
+					"name" : "ascii5[5]",
+					"strict" : false
+				},
+				{
+					"name" : "ascii7[5]",
+					"strict" : false
+				},
+				{
+					"name" : "ascii8[6]",
+					"strict" : false
+				},
+				{
+					"name" : "ascii10[6]",
+					"strict" : false
+				},
+				{
+					"name" : "ascii9[6]",
+					"strict" : false
+				},
+				{
+					"name" : "ascii11[6]",
+					"strict" : false
+				},
+				{
+					"name" : "ascii12[6]",
+					"strict" : false
+				},
+				{
+					"name" : "ascii14[6]",
+					"strict" : false
+				},
+				{
+					"name" : "ascii13[6]",
+					"strict" : false
+				},
+				{
+					"name" : "ascii15[6]",
+					"strict" : false
+				},
+				{
+					"name" : "ascii0[6]",
+					"strict" : false
+				},
+				{
+					"name" : "ascii2[6]",
+					"strict" : false
+				},
+				{
+					"name" : "ascii1[6]",
+					"strict" : false
+				},
+				{
+					"name" : "ascii3[6]",
+					"strict" : false
+				},
+				{
+					"name" : "ascii4[6]",
+					"strict" : false
+				},
+				{
+					"name" : "ascii6[6]",
+					"strict" : false
+				},
+				{
+					"name" : "ascii5[6]",
+					"strict" : false
+				},
+				{
+					"name" : "ascii7[6]",
+					"strict" : false
+				},
+				{
+					"name" : "ascii8[7]",
+					"strict" : false
+				},
+				{
+					"name" : "ascii10[7]",
+					"strict" : false
+				},
+				{
+					"name" : "ascii9[7]",
+					"strict" : false
+				},
+				{
+					"name" : "ascii11[7]",
+					"strict" : false
+				},
+				{
+					"name" : "ascii12[7]",
+					"strict" : false
+				},
+				{
+					"name" : "ascii14[7]",
+					"strict" : false
+				},
+				{
+					"name" : "ascii13[7]",
+					"strict" : false
+				},
+				{
+					"name" : "ascii15[7]",
+					"strict" : false
+				},
+				{
+					"name" : "ascii0[7]",
+					"strict" : false
+				},
+				{
+					"name" : "ascii2[7]",
+					"strict" : false
+				},
+				{
+					"name" : "ascii1[7]",
+					"strict" : false
+				},
+				{
+					"name" : "ascii3[7]",
+					"strict" : false
+				},
+				{
+					"name" : "ascii4[7]",
+					"strict" : false
+				},
+				{
+					"name" : "ascii6[7]",
+					"strict" : false
+				},
+				{
+					"name" : "ascii5[7]",
+					"strict" : false
+				},
+				{
+					"name" : "ascii7[7]",
+					"strict" : false
+				},
+				{
+					"name" : "submit",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

@@ -1,0 +1,20 @@
+|mx_4bit_2x1
+m_out[0] <= inst9.DB_MAX_OUTPUT_PORT_TYPE
+m_out[1] <= inst10.DB_MAX_OUTPUT_PORT_TYPE
+m_out[2] <= inst11.DB_MAX_OUTPUT_PORT_TYPE
+m_out[3] <= inst12.DB_MAX_OUTPUT_PORT_TYPE
+ce => inst8.IN0
+ce => inst.IN1
+ce => inst1.IN1
+ce => inst2.IN1
+ce => inst3.IN1
+s0[0] => inst4.IN1
+s0[1] => inst5.IN1
+s0[2] => inst6.IN1
+s0[3] => inst7.IN1
+s1[0] => inst.IN0
+s1[1] => inst1.IN0
+s1[2] => inst2.IN0
+s1[3] => inst3.IN0
+
+

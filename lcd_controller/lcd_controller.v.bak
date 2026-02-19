@@ -1,0 +1,176 @@
+module lcd_controller(
+    input wire clk,
+    input wire rst_n,
+    input wire [7:0] ascii1,
+    input wire [7:0] ascii2,
+    input wire [7:0] ascii3,
+    input wire [7:0] ascii4,
+    output reg tlcd_d0,
+    output reg tlcd_d1,
+    output reg tlcd_d2,
+    output reg tlcd_d3,
+    output reg tlcd_d4,
+    output reg tlcd_d5,
+    output reg tlcd_d6,
+    output reg tlcd_d7,
+    output reg lcd_rs,
+    output reg lcd_rw,
+    output reg lcd_e
+);
+    // 상태 정의
+    typedef enum reg [3:0] {
+        INIT,
+        FUNCTION_SET,
+        ENTRY_MODE,
+        DISPLAY_ON,
+        CLEAR_DISPLAY,
+        SET_DDRAM_ADDR,
+        WRITE_CHAR1,
+        WRITE_CHAR2,
+        WRITE_CHAR3,
+        WRITE_CHAR4,
+        IDLE
+    } state_t;
+
+    state_t state, next_state;
+
+    reg [19:0] delay_cnt;
+    reg [7:0] data_reg;
+
+    // 지연 시간 상수 정의 (클럭 주파수에 따라 조정)
+    parameter DELAY_1_52MS = 20'd76_000; // 1.52ms 지연 (50MHz 기준)
+    parameter DELAY_37US = 20'd1_850;    // 37μs 지연
+
+    // 클럭 분주기
+    reg [15:0] clk_div;
+    wire slow_clk;
+
+    always @(posedge clk or negedge rst_n) begin
+        if (!rst_n)
+            clk_div <= 0;
+        else
+            clk_div <= clk_div + 1;
+    end
+
+    assign slow_clk = clk_div[15]; // 느린 클럭 생성
+
+    // 상태 전이
+    always @(posedge slow_clk or negedge rst_n) begin
+        if (!rst_n) begin
+            state <= INIT;
+            delay_cnt <= 0;
+        end else begin
+            state <= next_state;
+        end
+    end
+
+    // 상태별 동작
+    always @(*) begin
+        // 기본값 설정
+        lcd_rs = 0;
+        lcd_rw = 0;
+        lcd_e = 0;
+        data_reg = 8'h00;
+        next_state = state;
+
+        case (state)
+            INIT: begin
+                delay_cnt = 0;
+                next_state = FUNCTION_SET;
+            end
+            FUNCTION_SET: begin
+                lcd_e = 1;
+                data_reg = 8'b0011_1000; // 8비트 모드, 2라인, 5x8 폰트
+                next_state = ENTRY_MODE;
+            end
+            ENTRY_MODE: begin
+                lcd_e = 1;
+                data_reg = 8'b0000_0110; // 커서 증가, 디스플레이 이동 없음
+                next_state = DISPLAY_ON;
+            end
+            DISPLAY_ON: begin
+                lcd_e = 1;
+                data_reg = 8'b0000_1100; // 디스플레이 ON, 커서 OFF
+                next_state = CLEAR_DISPLAY;
+            end
+            CLEAR_DISPLAY: begin
+                lcd_e = 1;
+                data_reg = 8'b0000_0001; // 디스플레이 클리어
+                if (delay_cnt < DELAY_1_52MS)
+                    delay_cnt = delay_cnt + 1;
+                else begin
+                    delay_cnt = 0;
+                    next_state = SET_DDRAM_ADDR;
+                end
+            end
+            SET_DDRAM_ADDR: begin
+                lcd_e = 1;
+                data_reg = 8'b1000_0000; // DDRAM 주소 설정 (0x00)
+                next_state = WRITE_CHAR1;
+            end
+            WRITE_CHAR1: begin
+                lcd_e = 1;
+                lcd_rs = 1;
+                data_reg = ascii1;
+                if (delay_cnt < DELAY_37US)
+                    delay_cnt = delay_cnt + 1;
+                else begin
+                    delay_cnt = 0;
+                    next_state = WRITE_CHAR2;
+                end
+            end
+            WRITE_CHAR2: begin
+                lcd_e = 1;
+                lcd_rs = 1;
+                data_reg = ascii2;
+                if (delay_cnt < DELAY_37US)
+                    delay_cnt = delay_cnt + 1;
+                else begin
+                    delay_cnt = 0;
+                    next_state = WRITE_CHAR3;
+                end
+            end
+            WRITE_CHAR3: begin
+                lcd_e = 1;
+                lcd_rs = 1;
+                data_reg = ascii3;
+                if (delay_cnt < DELAY_37US)
+                    delay_cnt = delay_cnt + 1;
+                else begin
+                    delay_cnt = 0;
+                    next_state = WRITE_CHAR4;
+                end
+            end
+            WRITE_CHAR4: begin
+                lcd_e = 1;
+                lcd_rs = 1;
+                data_reg = ascii4;
+                if (delay_cnt < DELAY_37US)
+                    delay_cnt = delay_cnt + 1;
+                else begin
+                    delay_cnt = 0;
+                    next_state = IDLE;
+                end
+            end
+            IDLE: begin
+                next_state = IDLE;
+            end
+            default: begin
+                next_state = INIT;
+            end
+        endcase
+    end
+
+    // 데이터 레지스터를 개별 데이터 핀에 연결
+    always @(*) begin
+        tlcd_d0 = data_reg[0];
+        tlcd_d1 = data_reg[1];
+        tlcd_d2 = data_reg[2];
+        tlcd_d3 = data_reg[3];
+        tlcd_d4 = data_reg[4];
+        tlcd_d5 = data_reg[5];
+        tlcd_d6 = data_reg[6];
+        tlcd_d7 = data_reg[7];
+    end
+
+endmodule

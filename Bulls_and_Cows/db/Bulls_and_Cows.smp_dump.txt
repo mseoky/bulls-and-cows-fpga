@@ -1,0 +1,20 @@
+
+State Machine - |Bulls_and_Cows|Password:b2v_inst3|RandomNumberGenerator:rng_inst|state
+Name state.0110 state.0101 state.0100 state.0011 state.0010 state.0001 state.0000 
+state.0000 0 0 0 0 0 0 0 
+state.0001 0 0 0 0 0 1 1 
+state.0010 0 0 0 0 1 0 1 
+state.0011 0 0 0 1 0 0 1 
+state.0100 0 0 1 0 0 0 1 
+state.0101 0 1 0 0 0 0 1 
+state.0110 1 0 0 0 0 0 1 
+
+State Machine - |Bulls_and_Cows|lcd_controller:b2v_inst13|state
+Name state.0110 state.0101 state.0100 state.0011 state.0010 state.0001 state.0000 
+state.0000 0 0 0 0 0 0 0 
+state.0001 0 0 0 0 0 1 1 
+state.0010 0 0 0 0 1 0 1 
+state.0011 0 0 0 1 0 0 1 
+state.0100 0 0 1 0 0 0 1 
+state.0101 0 1 0 0 0 0 1 
+state.0110 1 0 0 0 0 0 1 

@@ -1,0 +1,59 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/LCDL_project/term_project/Password/simulation/qsim
+vPassword
+Z1 !s110 1733393917
+!i10b 1
+!s100 4XFfRKR<EeN;dNBj>Kedd3
+Z2 !s11b Dg1SIo80bB@j0V0VzS_@n1
+IMQ7:8PFGBg>F@ZCPiXQn`1
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1733393916
+8Password.vo
+FPassword.vo
+!i122 30
+L0 32 4348
+Z4 OV;L;2020.1;71
+r1
+!s85 0
+31
+Z5 !s108 1733393917.000000
+!s107 Password.vo|
+!s90 -work|work|Password.vo|
+!i113 1
+Z6 o-work work
+Z7 tCvgOpt 0
+n@password
+vPassword_vlg_vec_tst
+R1
+!i10b 1
+!s100 khC^4^9bng]8kAX<_jJ;d2
+R2
+I]Q^VMXFfEJX_E3gf30DTD3
+R3
+R0
+w1733393915
+8Waveform1.vwf.vt
+FWaveform1.vwf.vt
+!i122 31
+L0 30 145
+R4
+r1
+!s85 0
+31
+R5
+!s107 Waveform1.vwf.vt|
+!s90 -work|work|Waveform1.vwf.vt|
+!i113 1
+R6
+R7
+n@password_vlg_vec_tst

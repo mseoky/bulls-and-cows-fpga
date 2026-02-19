@@ -1,0 +1,236 @@
+// Copyright (C) 2020  Intel Corporation. All rights reserved.
+// Your use of Intel Corporation's design tools, logic functions 
+// and other software and tools, and any partner logic 
+// functions, and any output files from any of the foregoing 
+// (including device programming or simulation files), and any 
+// associated documentation or information are expressly subject 
+// to the terms and conditions of the Intel Program License 
+// Subscription Agreement, the Intel Quartus Prime License Agreement,
+// the Intel FPGA IP License Agreement, or other applicable license
+// agreement, including, without limitation, that your use is for
+// the sole purpose of programming logic devices manufactured by
+// Intel and sold by Intel or its authorized distributors.  Please
+// refer to the applicable agreement for further details, at
+// https://fpgasoftware.intel.com/eula.
+
+// *****************************************************************************
+// This file contains a Verilog test bench with test vectors .The test vectors  
+// are exported from a vector file in the Quartus Waveform Editor and apply to  
+// the top level entity of the current Quartus project .The user can use this   
+// testbench to simulate his design using a third-party simulation tool .       
+// *****************************************************************************
+// Generated on "11/30/2024 17:55:50"
+                                                                                
+// Verilog Test Bench (with test vectors) for design :                          Bulls_and_Cows
+// 
+// Simulation tool : 3rd Party
+// 
+
+`timescale 1 ps/ 1 ps
+module Bulls_and_Cows_vlg_vec_tst();
+// constants                                           
+// general purpose registers
+reg clk;
+reg gen_enable;
+reg keypad_0;
+reg keypad_1;
+reg keypad_2;
+reg keypad_3;
+reg keypad_4;
+reg keypad_5;
+reg keypad_6;
+reg keypad_7;
+reg keypad_8;
+reg keypad_9;
+reg rst;
+// wires                                               
+wire a;
+wire b;
+wire c;
+wire com1;
+wire com2;
+wire com3;
+wire com4;
+wire com5;
+wire com6;
+wire com7;
+wire com8;
+wire d;
+wire e;
+wire f;
+wire g;
+wire green_1;
+wire green_2;
+wire green_3;
+wire green_4;
+wire lcd_e;
+wire lcd_rs;
+wire lcd_rw;
+wire Motor_A;
+wire Motor_ANOT;
+wire Motor_B;
+wire Motor_BNOT;
+wire piezo;
+wire red_1;
+wire red_2;
+wire red_3;
+wire red_4;
+wire tlcd_d0;
+wire tlcd_d1;
+wire tlcd_d2;
+wire tlcd_d3;
+wire tlcd_d4;
+wire tlcd_d5;
+wire tlcd_d6;
+wire tlcd_d7;
+
+// assign statements (if any)                          
+Bulls_and_Cows i1 (
+// port map - connection between master ports and signals/registers   
+	.a(a),
+	.b(b),
+	.c(c),
+	.clk(clk),
+	.com1(com1),
+	.com2(com2),
+	.com3(com3),
+	.com4(com4),
+	.com5(com5),
+	.com6(com6),
+	.com7(com7),
+	.com8(com8),
+	.d(d),
+	.e(e),
+	.f(f),
+	.g(g),
+	.gen_enable(gen_enable),
+	.green_1(green_1),
+	.green_2(green_2),
+	.green_3(green_3),
+	.green_4(green_4),
+	.keypad_0(keypad_0),
+	.keypad_1(keypad_1),
+	.keypad_2(keypad_2),
+	.keypad_3(keypad_3),
+	.keypad_4(keypad_4),
+	.keypad_5(keypad_5),
+	.keypad_6(keypad_6),
+	.keypad_7(keypad_7),
+	.keypad_8(keypad_8),
+	.keypad_9(keypad_9),
+	.lcd_e(lcd_e),
+	.lcd_rs(lcd_rs),
+	.lcd_rw(lcd_rw),
+	.Motor_A(Motor_A),
+	.Motor_ANOT(Motor_ANOT),
+	.Motor_B(Motor_B),
+	.Motor_BNOT(Motor_BNOT),
+	.piezo(piezo),
+	.red_1(red_1),
+	.red_2(red_2),
+	.red_3(red_3),
+	.red_4(red_4),
+	.rst(rst),
+	.tlcd_d0(tlcd_d0),
+	.tlcd_d1(tlcd_d1),
+	.tlcd_d2(tlcd_d2),
+	.tlcd_d3(tlcd_d3),
+	.tlcd_d4(tlcd_d4),
+	.tlcd_d5(tlcd_d5),
+	.tlcd_d6(tlcd_d6),
+	.tlcd_d7(tlcd_d7)
+);
+initial 
+begin 
+#1000000 $finish;
+end 
+
+// clk
+initial
+begin
+	clk = 1'b1;
+	# 10000;
+	repeat(49)
+	begin
+		clk = 1'b0;
+		clk = #10000 1'b1;
+		# 10000;
+	end
+	clk = 1'b0;
+end 
+
+// gen_enable
+initial
+begin
+	gen_enable = 1'b0;
+	gen_enable = #420000 1'b1;
+	gen_enable = #20000 1'b0;
+end 
+
+// keypad_0
+initial
+begin
+	keypad_0 = 1'b0;
+end 
+
+// keypad_1
+initial
+begin
+	keypad_1 = 1'b0;
+end 
+
+// keypad_2
+initial
+begin
+	keypad_2 = 1'b0;
+end 
+
+// keypad_3
+initial
+begin
+	keypad_3 = 1'b0;
+end 
+
+// keypad_4
+initial
+begin
+	keypad_4 = 1'b0;
+end 
+
+// keypad_5
+initial
+begin
+	keypad_5 = 1'b0;
+end 
+
+// keypad_6
+initial
+begin
+	keypad_6 = 1'b0;
+end 
+
+// keypad_7
+initial
+begin
+	keypad_7 = 1'b0;
+end 
+
+// keypad_8
+initial
+begin
+	keypad_8 = 1'b0;
+end 
+
+// keypad_9
+initial
+begin
+	keypad_9 = 1'b0;
+end 
+
+// rst
+initial
+begin
+	rst = 1'b1;
+end 
+endmodule
+

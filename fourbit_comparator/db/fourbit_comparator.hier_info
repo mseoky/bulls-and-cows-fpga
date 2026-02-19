@@ -1,0 +1,12 @@
+|fourbit_comparator
+out <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+Reg1[0] => inst9.IN0
+Reg1[1] => inst8.IN0
+Reg1[2] => inst7.IN0
+Reg1[3] => inst6.IN0
+Reg2[0] => inst9.IN1
+Reg2[1] => inst8.IN1
+Reg2[2] => inst7.IN1
+Reg2[3] => inst6.IN1
+
+

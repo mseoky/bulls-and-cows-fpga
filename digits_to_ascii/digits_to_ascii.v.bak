@@ -1,0 +1,15 @@
+module digits_to_ascii(
+    input wire [3:0] digit1,
+    input wire [3:0] digit2,
+    input wire [3:0] digit3,
+    input wire [3:0] digit4,
+    output wire [7:0] ascii1,
+    output wire [7:0] ascii2,
+    output wire [7:0] ascii3,
+    output wire [7:0] ascii4
+);
+    assign ascii1 = digit1 + 8'h30;
+    assign ascii2 = digit2 + 8'h30;
+    assign ascii3 = digit3 + 8'h30;
+    assign ascii4 = digit4 + 8'h30;
+endmodule

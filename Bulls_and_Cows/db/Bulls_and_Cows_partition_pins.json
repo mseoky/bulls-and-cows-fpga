@@ -1,0 +1,205 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "a",
+					"strict" : false
+				},
+				{
+					"name" : "b",
+					"strict" : false
+				},
+				{
+					"name" : "c",
+					"strict" : false
+				},
+				{
+					"name" : "d",
+					"strict" : false
+				},
+				{
+					"name" : "e",
+					"strict" : false
+				},
+				{
+					"name" : "f",
+					"strict" : false
+				},
+				{
+					"name" : "g",
+					"strict" : false
+				},
+				{
+					"name" : "com8",
+					"strict" : false
+				},
+				{
+					"name" : "com6",
+					"strict" : false
+				},
+				{
+					"name" : "com5",
+					"strict" : false
+				},
+				{
+					"name" : "com4",
+					"strict" : false
+				},
+				{
+					"name" : "com3",
+					"strict" : false
+				},
+				{
+					"name" : "com2",
+					"strict" : false
+				},
+				{
+					"name" : "com1",
+					"strict" : false
+				},
+				{
+					"name" : "piezo",
+					"strict" : false
+				},
+				{
+					"name" : "green_1",
+					"strict" : false
+				},
+				{
+					"name" : "green_2",
+					"strict" : false
+				},
+				{
+					"name" : "green_3",
+					"strict" : false
+				},
+				{
+					"name" : "green_4",
+					"strict" : false
+				},
+				{
+					"name" : "red_1",
+					"strict" : false
+				},
+				{
+					"name" : "red_2",
+					"strict" : false
+				},
+				{
+					"name" : "red_3",
+					"strict" : false
+				},
+				{
+					"name" : "red_4",
+					"strict" : false
+				},
+				{
+					"name" : "Motor_A",
+					"strict" : false
+				},
+				{
+					"name" : "Motor_BNOT",
+					"strict" : false
+				},
+				{
+					"name" : "com7",
+					"strict" : false
+				},
+				{
+					"name" : "tlcd_d0",
+					"strict" : false
+				},
+				{
+					"name" : "tlcd_d1",
+					"strict" : false
+				},
+				{
+					"name" : "tlcd_d2",
+					"strict" : false
+				},
+				{
+					"name" : "tlcd_d3",
+					"strict" : false
+				},
+				{
+					"name" : "tlcd_d4",
+					"strict" : false
+				},
+				{
+					"name" : "tlcd_d5",
+					"strict" : false
+				},
+				{
+					"name" : "tlcd_d6",
+					"strict" : false
+				},
+				{
+					"name" : "lcd_rs",
+					"strict" : false
+				},
+				{
+					"name" : "lcd_e",
+					"strict" : false
+				},
+				{
+					"name" : "clk",
+					"strict" : false
+				},
+				{
+					"name" : "rst",
+					"strict" : false
+				},
+				{
+					"name" : "keypad_0",
+					"strict" : false
+				},
+				{
+					"name" : "keypad_8",
+					"strict" : false
+				},
+				{
+					"name" : "keypad_9",
+					"strict" : false
+				},
+				{
+					"name" : "keypad_3",
+					"strict" : false
+				},
+				{
+					"name" : "keypad_7",
+					"strict" : false
+				},
+				{
+					"name" : "keypad_2",
+					"strict" : false
+				},
+				{
+					"name" : "keypad_6",
+					"strict" : false
+				},
+				{
+					"name" : "keypad_1",
+					"strict" : false
+				},
+				{
+					"name" : "keypad_5",
+					"strict" : false
+				},
+				{
+					"name" : "keypad_4",
+					"strict" : false
+				},
+				{
+					"name" : "submit",
+					"strict" : false
+				},
+				{
+					"name" : "gen_enable",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

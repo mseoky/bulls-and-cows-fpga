@@ -1,0 +1,23 @@
+|d2b
+b0 <= inst11.DB_MAX_OUTPUT_PORT_TYPE
+d0 => inst20.IN0
+d9 => inst21.IN0
+d9 => inst23.IN0
+d7 => inst55.IN0
+d7 => inst15.IN0
+d7 => inst17.IN0
+d5 => inst55.IN1
+d5 => inst16.IN0
+d3 => inst.IN0
+d3 => inst155.IN0
+d1 => inst.IN1
+b1 <= inst12.DB_MAX_OUTPUT_PORT_TYPE
+d6 => inst15.IN1
+d6 => inst17.IN1
+d2 => inst155.IN1
+b2 <= inst13.DB_MAX_OUTPUT_PORT_TYPE
+d4 => inst16.IN1
+b3 <= inst14.DB_MAX_OUTPUT_PORT_TYPE
+d8 => inst23.IN1
+
+

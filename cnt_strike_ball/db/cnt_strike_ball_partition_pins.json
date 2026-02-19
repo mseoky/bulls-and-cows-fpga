@@ -1,0 +1,161 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "STRIKE[0]",
+					"strict" : false
+				},
+				{
+					"name" : "STRIKE[1]",
+					"strict" : false
+				},
+				{
+					"name" : "STRIKE[2]",
+					"strict" : false
+				},
+				{
+					"name" : "BALL[0]",
+					"strict" : false
+				},
+				{
+					"name" : "BALL[1]",
+					"strict" : false
+				},
+				{
+					"name" : "BALL[2]",
+					"strict" : false
+				},
+				{
+					"name" : "random_num[15]",
+					"strict" : false
+				},
+				{
+					"name" : "Reg_1[3]",
+					"strict" : false
+				},
+				{
+					"name" : "random_num[12]",
+					"strict" : false
+				},
+				{
+					"name" : "Reg_1[0]",
+					"strict" : false
+				},
+				{
+					"name" : "random_num[13]",
+					"strict" : false
+				},
+				{
+					"name" : "Reg_1[1]",
+					"strict" : false
+				},
+				{
+					"name" : "random_num[14]",
+					"strict" : false
+				},
+				{
+					"name" : "Reg_1[2]",
+					"strict" : false
+				},
+				{
+					"name" : "random_num[11]",
+					"strict" : false
+				},
+				{
+					"name" : "Reg_2[3]",
+					"strict" : false
+				},
+				{
+					"name" : "random_num[8]",
+					"strict" : false
+				},
+				{
+					"name" : "Reg_2[0]",
+					"strict" : false
+				},
+				{
+					"name" : "random_num[9]",
+					"strict" : false
+				},
+				{
+					"name" : "Reg_2[1]",
+					"strict" : false
+				},
+				{
+					"name" : "random_num[10]",
+					"strict" : false
+				},
+				{
+					"name" : "Reg_2[2]",
+					"strict" : false
+				},
+				{
+					"name" : "random_num[7]",
+					"strict" : false
+				},
+				{
+					"name" : "Reg_3[3]",
+					"strict" : false
+				},
+				{
+					"name" : "random_num[4]",
+					"strict" : false
+				},
+				{
+					"name" : "Reg_3[0]",
+					"strict" : false
+				},
+				{
+					"name" : "random_num[5]",
+					"strict" : false
+				},
+				{
+					"name" : "Reg_3[1]",
+					"strict" : false
+				},
+				{
+					"name" : "random_num[6]",
+					"strict" : false
+				},
+				{
+					"name" : "Reg_3[2]",
+					"strict" : false
+				},
+				{
+					"name" : "random_num[3]",
+					"strict" : false
+				},
+				{
+					"name" : "Reg_4[3]",
+					"strict" : false
+				},
+				{
+					"name" : "random_num[0]",
+					"strict" : false
+				},
+				{
+					"name" : "Reg_4[0]",
+					"strict" : false
+				},
+				{
+					"name" : "random_num[1]",
+					"strict" : false
+				},
+				{
+					"name" : "Reg_4[1]",
+					"strict" : false
+				},
+				{
+					"name" : "random_num[2]",
+					"strict" : false
+				},
+				{
+					"name" : "Reg_4[2]",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

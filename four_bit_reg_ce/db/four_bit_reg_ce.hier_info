@@ -1,0 +1,55 @@
+|four_bit_reg_ce
+out[0] <= inst.DB_MAX_OUTPUT_PORT_TYPE
+out[1] <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+out[2] <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+out[3] <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+rst_n => inst.ACLR
+rst_n => inst1.ACLR
+rst_n => inst2.ACLR
+rst_n => inst3.ACLR
+clk => inst.CLK
+clk => inst1.CLK
+clk => inst2.CLK
+clk => inst3.CLK
+din[0] => mx_2x1:inst4.s_1
+din[1] => mx_2x1:inst5.s_1
+din[2] => mx_2x1:inst6.s_1
+din[3] => mx_2x1:inst7.s_1
+ce => mx_2x1:inst4.sel
+ce => mx_2x1:inst5.sel
+ce => mx_2x1:inst6.sel
+ce => mx_2x1:inst7.sel
+
+
+|four_bit_reg_ce|mx_2x1:inst4
+s_1 => SYNTHESIZED_WIRE_2.IN0
+s_0 => SYNTHESIZED_WIRE_1.IN0
+sel => SYNTHESIZED_WIRE_2.IN1
+sel => SYNTHESIZED_WIRE_1.IN1
+m_out <= m_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|four_bit_reg_ce|mx_2x1:inst5
+s_1 => SYNTHESIZED_WIRE_2.IN0
+s_0 => SYNTHESIZED_WIRE_1.IN0
+sel => SYNTHESIZED_WIRE_2.IN1
+sel => SYNTHESIZED_WIRE_1.IN1
+m_out <= m_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|four_bit_reg_ce|mx_2x1:inst6
+s_1 => SYNTHESIZED_WIRE_2.IN0
+s_0 => SYNTHESIZED_WIRE_1.IN0
+sel => SYNTHESIZED_WIRE_2.IN1
+sel => SYNTHESIZED_WIRE_1.IN1
+m_out <= m_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|four_bit_reg_ce|mx_2x1:inst7
+s_1 => SYNTHESIZED_WIRE_2.IN0
+s_0 => SYNTHESIZED_WIRE_1.IN0
+sel => SYNTHESIZED_WIRE_2.IN1
+sel => SYNTHESIZED_WIRE_1.IN1
+m_out <= m_out.DB_MAX_OUTPUT_PORT_TYPE
+
+

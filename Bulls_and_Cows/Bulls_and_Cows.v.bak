@@ -1,0 +1,426 @@
+// Copyright (C) 2020  Intel Corporation. All rights reserved.
+// Your use of Intel Corporation's design tools, logic functions 
+// and other software and tools, and any partner logic 
+// functions, and any output files from any of the foregoing 
+// (including device programming or simulation files), and any 
+// associated documentation or information are expressly subject 
+// to the terms and conditions of the Intel Program License 
+// Subscription Agreement, the Intel Quartus Prime License Agreement,
+// the Intel FPGA IP License Agreement, or other applicable license
+// agreement, including, without limitation, that your use is for
+// the sole purpose of programming logic devices manufactured by
+// Intel and sold by Intel or its authorized distributors.  Please
+// refer to the applicable agreement for further details, at
+// https://fpgasoftware.intel.com/eula.
+
+// PROGRAM		"Quartus Prime"
+// VERSION		"Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition"
+// CREATED		"Sun Dec 01 14:27:16 2024"
+
+module Bulls_and_Cows(
+	clk,
+	rst,
+	keypad_0,
+	keypad_1,
+	keypad_2,
+	keypad_3,
+	keypad_4,
+	keypad_6,
+	keypad_5,
+	keypad_7,
+	keypad_8,
+	keypad_9,
+	gen_enable,
+	a,
+	b,
+	c,
+	d,
+	e,
+	f,
+	g,
+	com8,
+	com6,
+	com5,
+	com4,
+	com3,
+	com2,
+	com1,
+	piezo,
+	green_1,
+	green_2,
+	green_3,
+	green_4,
+	red_1,
+	red_2,
+	red_3,
+	red_4,
+	Motor_A,
+	Motor_B,
+	Motor_ANOT,
+	Motor_BNOT,
+	com7,
+	tlcd_d0,
+	tlcd_d1,
+	tlcd_d2,
+	tlcd_d3,
+	tlcd_d4,
+	tlcd_d5,
+	tlcd_d6,
+	tlcd_d7,
+	lcd_rs,
+	lcd_rw,
+	lcd_e
+);
+
+
+input wire	clk;
+input wire	rst;
+input wire	keypad_0;
+input wire	keypad_1;
+input wire	keypad_2;
+input wire	keypad_3;
+input wire	keypad_4;
+input wire	keypad_6;
+input wire	keypad_5;
+input wire	keypad_7;
+input wire	keypad_8;
+input wire	keypad_9;
+input wire	gen_enable;
+output wire	a;
+output wire	b;
+output wire	c;
+output wire	d;
+output wire	e;
+output wire	f;
+output wire	g;
+output wire	com8;
+output wire	com6;
+output wire	com5;
+output wire	com4;
+output wire	com3;
+output wire	com2;
+output wire	com1;
+output wire	piezo;
+output wire	green_1;
+output wire	green_2;
+output wire	green_3;
+output wire	green_4;
+output wire	red_1;
+output wire	red_2;
+output wire	red_3;
+output wire	red_4;
+output wire	Motor_A;
+output wire	Motor_B;
+output wire	Motor_ANOT;
+output wire	Motor_BNOT;
+output wire	com7;
+output wire	tlcd_d0;
+output wire	tlcd_d1;
+output wire	tlcd_d2;
+output wire	tlcd_d3;
+output wire	tlcd_d4;
+output wire	tlcd_d5;
+output wire	tlcd_d6;
+output wire	tlcd_d7;
+output wire	lcd_rs;
+output wire	lcd_rw;
+output wire	lcd_e;
+
+wire	[3:0] reg_line;
+wire	SYNTHESIZED_WIRE_78;
+wire	SYNTHESIZED_WIRE_1;
+wire	SYNTHESIZED_WIRE_79;
+wire	[3:0] SYNTHESIZED_WIRE_80;
+wire	[3:0] SYNTHESIZED_WIRE_81;
+wire	[0:15] SYNTHESIZED_WIRE_82;
+wire	[7:0] SYNTHESIZED_WIRE_13;
+wire	[7:0] SYNTHESIZED_WIRE_14;
+wire	[7:0] SYNTHESIZED_WIRE_15;
+wire	[7:0] SYNTHESIZED_WIRE_16;
+wire	SYNTHESIZED_WIRE_83;
+wire	[3:0] SYNTHESIZED_WIRE_84;
+wire	[3:0] SYNTHESIZED_WIRE_85;
+wire	SYNTHESIZED_WIRE_86;
+wire	[3:0] SYNTHESIZED_WIRE_24;
+wire	[3:0] SYNTHESIZED_WIRE_25;
+wire	[3:0] SYNTHESIZED_WIRE_26;
+wire	SYNTHESIZED_WIRE_87;
+wire	SYNTHESIZED_WIRE_28;
+wire	SYNTHESIZED_WIRE_29;
+wire	SYNTHESIZED_WIRE_31;
+wire	SYNTHESIZED_WIRE_33;
+wire	SYNTHESIZED_WIRE_43;
+wire	SYNTHESIZED_WIRE_44;
+wire	SYNTHESIZED_WIRE_46;
+wire	SYNTHESIZED_WIRE_48;
+wire	SYNTHESIZED_WIRE_51;
+wire	SYNTHESIZED_WIRE_52;
+wire	SYNTHESIZED_WIRE_53;
+wire	SYNTHESIZED_WIRE_54;
+wire	SYNTHESIZED_WIRE_55;
+wire	SYNTHESIZED_WIRE_88;
+wire	SYNTHESIZED_WIRE_89;
+wire	SYNTHESIZED_WIRE_61;
+wire	SYNTHESIZED_WIRE_62;
+wire	SYNTHESIZED_WIRE_64;
+wire	SYNTHESIZED_WIRE_66;
+wire	SYNTHESIZED_WIRE_76;
+
+assign	com4 = 1;
+assign	com3 = 1;
+assign	com2 = 1;
+assign	com1 = 1;
+assign	SYNTHESIZED_WIRE_1 = 1;
+
+
+
+
+d2b	b2v_inst(
+	.d0(keypad_0),
+	.d1(keypad_1),
+	.d2(keypad_2),
+	.d3(keypad_3),
+	.d4(keypad_4),
+	.d5(keypad_5),
+	.d6(keypad_6),
+	.d7(keypad_7),
+	.d8(keypad_8),
+	.d9(keypad_9),
+	.b3(reg_line[3]),
+	.b2(reg_line[2]),
+	.b1(reg_line[1]),
+	.b0(reg_line[0]));
+
+
+PNU_CLK_DIV	b2v_inst1(
+	.clk(clk),
+	.rst_n(SYNTHESIZED_WIRE_78),
+	.en(SYNTHESIZED_WIRE_1),
+	.div_clk(SYNTHESIZED_WIRE_76));
+	defparam	b2v_inst1.cnt_num = 10000;
+
+
+four_bit_reg_ce	b2v_inst10(
+	.ce(SYNTHESIZED_WIRE_79),
+	.clk(clk),
+	.rst_n(SYNTHESIZED_WIRE_78),
+	.din(SYNTHESIZED_WIRE_80),
+	.out(SYNTHESIZED_WIRE_81));
+
+
+four_bit_reg_ce	b2v_inst11(
+	.ce(SYNTHESIZED_WIRE_79),
+	.clk(clk),
+	.rst_n(SYNTHESIZED_WIRE_78),
+	.din(SYNTHESIZED_WIRE_81),
+	.out(SYNTHESIZED_WIRE_85));
+
+
+digits_to_ascii	b2v_inst12(
+	.digit1(SYNTHESIZED_WIRE_82[3:0]),
+	.digit2(SYNTHESIZED_WIRE_82[3:0]),
+	.digit3(SYNTHESIZED_WIRE_82[3:0]),
+	.digit4(SYNTHESIZED_WIRE_82[3:0]),
+	.ascii1(SYNTHESIZED_WIRE_13),
+	.ascii2(SYNTHESIZED_WIRE_14),
+	.ascii3(SYNTHESIZED_WIRE_15),
+	.ascii4(SYNTHESIZED_WIRE_16));
+
+
+lcd_controller	b2v_inst13(
+	.clk(clk),
+	.rst_n(SYNTHESIZED_WIRE_78),
+	.ascii1(SYNTHESIZED_WIRE_13),
+	.ascii2(SYNTHESIZED_WIRE_14),
+	.ascii3(SYNTHESIZED_WIRE_15),
+	.ascii4(SYNTHESIZED_WIRE_16),
+	.tlcd_d0(tlcd_d0),
+	.tlcd_d1(tlcd_d1),
+	.tlcd_d2(tlcd_d2),
+	.tlcd_d3(tlcd_d3),
+	.tlcd_d4(tlcd_d4),
+	.tlcd_d5(tlcd_d5),
+	.tlcd_d6(tlcd_d6),
+	.tlcd_d7(tlcd_d7),
+	.lcd_rs(lcd_rs),
+	.lcd_rw(lcd_rw),
+	.lcd_e(lcd_e));
+	defparam	b2v_inst13.CLEAR_DISPLAY = 4'b0100;
+	defparam	b2v_inst13.DELAY_1_52MS = 20'b00010010100011100000;
+	defparam	b2v_inst13.DELAY_37US = 20'b00000000011100111010;
+	defparam	b2v_inst13.DISPLAY_ON = 4'b0011;
+	defparam	b2v_inst13.ENTRY_MODE = 4'b0010;
+	defparam	b2v_inst13.FUNCTION_SET = 4'b0001;
+	defparam	b2v_inst13.IDLE = 4'b1010;
+	defparam	b2v_inst13.INIT = 4'b0000;
+	defparam	b2v_inst13.SET_DDRAM_ADDR = 4'b0101;
+	defparam	b2v_inst13.WRITE_CHAR1 = 4'b0110;
+	defparam	b2v_inst13.WRITE_CHAR2 = 4'b0111;
+	defparam	b2v_inst13.WRITE_CHAR3 = 4'b1000;
+	defparam	b2v_inst13.WRITE_CHAR4 = 4'b1001;
+
+
+mx_4bit_2x1	b2v_inst14(
+	.ce(SYNTHESIZED_WIRE_83),
+	.s0(SYNTHESIZED_WIRE_84),
+	.s1(SYNTHESIZED_WIRE_80),
+	.m_out(SYNTHESIZED_WIRE_24));
+
+
+mx_4bit_2x1	b2v_inst15(
+	.ce(SYNTHESIZED_WIRE_83),
+	.s0(SYNTHESIZED_WIRE_81),
+	.s1(SYNTHESIZED_WIRE_85),
+	.m_out(SYNTHESIZED_WIRE_25));
+
+
+mx_4bit_2x1	b2v_inst16(
+	.ce(SYNTHESIZED_WIRE_86),
+	.s0(SYNTHESIZED_WIRE_24),
+	.s1(SYNTHESIZED_WIRE_25),
+	.m_out(SYNTHESIZED_WIRE_26));
+
+
+b2seg_bus	b2v_inst17(
+	.b_in(SYNTHESIZED_WIRE_26),
+	.a(a),
+	.b(b),
+	.c(c),
+	.d(d),
+	.e(e),
+	.f(f),
+	.g(g));
+
+assign	SYNTHESIZED_WIRE_29 = keypad_0 | keypad_2 | keypad_1 | keypad_3 | keypad_5 | keypad_4 | keypad_6 | keypad_7;
+
+
+LED	b2v_inst2(
+	.Correct(SYNTHESIZED_WIRE_87),
+	.Green1(green_1),
+	.Green2(green_2),
+	.Green3(green_3),
+	.Green4(green_4),
+	.Red1(red_1),
+	.Red2(red_2),
+	.Red3(red_3),
+	.Red4(red_4));
+
+assign	SYNTHESIZED_WIRE_28 = keypad_9 | keypad_8;
+
+assign	SYNTHESIZED_WIRE_55 = SYNTHESIZED_WIRE_28 | SYNTHESIZED_WIRE_29;
+
+assign	SYNTHESIZED_WIRE_78 =  ~rst;
+
+assign	SYNTHESIZED_WIRE_88 = SYNTHESIZED_WIRE_87 ^ SYNTHESIZED_WIRE_31;
+
+assign	SYNTHESIZED_WIRE_89 = SYNTHESIZED_WIRE_87 ^ SYNTHESIZED_WIRE_33;
+
+assign	SYNTHESIZED_WIRE_43 =  ~SYNTHESIZED_WIRE_83;
+
+assign	SYNTHESIZED_WIRE_44 =  ~SYNTHESIZED_WIRE_86;
+
+
+password	b2v_inst3(
+	.clk(clk),
+	.rst_n(SYNTHESIZED_WIRE_78),
+	.gen_enable(gen_enable),
+	.Reg_1(SYNTHESIZED_WIRE_84),
+	.Reg_2(SYNTHESIZED_WIRE_80),
+	.Reg_3(SYNTHESIZED_WIRE_81),
+	.Reg_4(SYNTHESIZED_WIRE_85),
+	.correct(SYNTHESIZED_WIRE_87),
+	.pwd_key(SYNTHESIZED_WIRE_82));
+
+assign	SYNTHESIZED_WIRE_46 =  ~SYNTHESIZED_WIRE_86;
+
+assign	SYNTHESIZED_WIRE_48 =  ~SYNTHESIZED_WIRE_83;
+
+assign	SYNTHESIZED_WIRE_51 = SYNTHESIZED_WIRE_43 & SYNTHESIZED_WIRE_44;
+
+assign	SYNTHESIZED_WIRE_52 = SYNTHESIZED_WIRE_83 & SYNTHESIZED_WIRE_46;
+
+assign	SYNTHESIZED_WIRE_53 = SYNTHESIZED_WIRE_86 & SYNTHESIZED_WIRE_48;
+
+assign	SYNTHESIZED_WIRE_54 = SYNTHESIZED_WIRE_86 & SYNTHESIZED_WIRE_83;
+
+assign	com8 =  ~SYNTHESIZED_WIRE_51;
+
+assign	com7 =  ~SYNTHESIZED_WIRE_52;
+
+assign	com6 =  ~SYNTHESIZED_WIRE_53;
+
+assign	com5 =  ~SYNTHESIZED_WIRE_54;
+
+
+trigger	b2v_inst4(
+	.Din(SYNTHESIZED_WIRE_55),
+	.CLK(clk),
+	.rst_n(SYNTHESIZED_WIRE_78),
+	.Dout(SYNTHESIZED_WIRE_79));
+
+assign	SYNTHESIZED_WIRE_61 =  ~SYNTHESIZED_WIRE_88;
+
+
+assign	SYNTHESIZED_WIRE_62 =  ~SYNTHESIZED_WIRE_89;
+
+assign	SYNTHESIZED_WIRE_64 =  ~SYNTHESIZED_WIRE_89;
+
+assign	SYNTHESIZED_WIRE_66 =  ~SYNTHESIZED_WIRE_89;
+
+assign	Motor_A = SYNTHESIZED_WIRE_61 & SYNTHESIZED_WIRE_62;
+
+assign	Motor_B = SYNTHESIZED_WIRE_88 & SYNTHESIZED_WIRE_64;
+
+assign	Motor_ANOT = SYNTHESIZED_WIRE_88 & SYNTHESIZED_WIRE_66;
+
+assign	Motor_BNOT = SYNTHESIZED_WIRE_88 & SYNTHESIZED_WIRE_89;
+
+
+Piezo_module	b2v_inst5(
+	.clk(clk),
+	.rst(SYNTHESIZED_WIRE_78),
+	.Keypad0(keypad_0),
+	.Keypad1(keypad_1),
+	.Keypad2(keypad_2),
+	.Keypad3(keypad_3),
+	.Keypad4(keypad_4),
+	.Keypad5(keypad_5),
+	.Keypad6(keypad_6),
+	.Keypad7(keypad_7),
+	.Keypad8(keypad_8),
+	.Keypad9(keypad_9),
+	.Piezo(piezo));
+
+
+
+count4	b2v_inst6(
+	.clk(clk),
+	.rst_n(SYNTHESIZED_WIRE_78),
+	.Q0(SYNTHESIZED_WIRE_83),
+	.Q1(SYNTHESIZED_WIRE_86));
+
+
+four_bit_reg_ce	b2v_inst7(
+	.ce(SYNTHESIZED_WIRE_79),
+	.clk(clk),
+	.rst_n(SYNTHESIZED_WIRE_78),
+	.din(reg_line),
+	.out(SYNTHESIZED_WIRE_84));
+
+
+four_bit_reg_ce	b2v_inst8(
+	.ce(SYNTHESIZED_WIRE_79),
+	.clk(clk),
+	.rst_n(SYNTHESIZED_WIRE_78),
+	.din(SYNTHESIZED_WIRE_84),
+	.out(SYNTHESIZED_WIRE_80));
+
+
+count4	b2v_inst9(
+	.clk(SYNTHESIZED_WIRE_76),
+	.rst_n(SYNTHESIZED_WIRE_78),
+	.Q0(SYNTHESIZED_WIRE_31),
+	.Q1(SYNTHESIZED_WIRE_33));
+
+
+endmodule

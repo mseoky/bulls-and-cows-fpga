@@ -1,0 +1,61 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "Piezo",
+					"strict" : false
+				},
+				{
+					"name" : "clk",
+					"strict" : false
+				},
+				{
+					"name" : "rst",
+					"strict" : false
+				},
+				{
+					"name" : "Keypad9",
+					"strict" : false
+				},
+				{
+					"name" : "Keypad7",
+					"strict" : false
+				},
+				{
+					"name" : "Keypad5",
+					"strict" : false
+				},
+				{
+					"name" : "Keypad6",
+					"strict" : false
+				},
+				{
+					"name" : "Keypad4",
+					"strict" : false
+				},
+				{
+					"name" : "Keypad8",
+					"strict" : false
+				},
+				{
+					"name" : "Keypad0",
+					"strict" : false
+				},
+				{
+					"name" : "Keypad2",
+					"strict" : false
+				},
+				{
+					"name" : "Keypad3",
+					"strict" : false
+				},
+				{
+					"name" : "Keypad1",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

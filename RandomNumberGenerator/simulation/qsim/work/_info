@@ -1,0 +1,59 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/LCDL_project/term_project/RandomNumberGenerator/simulation/qsim
+vRandomNumberGenerator
+Z1 !s110 1733033952
+!i10b 1
+!s100 <<G]GN=Tabha1]d@7[:0Q2
+Z2 !s11b Dg1SIo80bB@j0V0VzS_@n1
+IL0:Q1YC`O^?@GHml;0HnE3
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1733033950
+8RandomNumberGenerator.vo
+FRandomNumberGenerator.vo
+!i122 28
+L0 32 2470
+Z4 OV;L;2020.1;71
+r1
+!s85 0
+31
+Z5 !s108 1733033952.000000
+!s107 RandomNumberGenerator.vo|
+!s90 -work|work|RandomNumberGenerator.vo|
+!i113 1
+Z6 o-work work
+Z7 tCvgOpt 0
+n@random@number@generator
+vRandomNumberGenerator_vlg_vec_tst
+R1
+!i10b 1
+!s100 :5`HFie7eCm]YZ8VbjW2I2
+R2
+Ih99fge3Sj5@U`GV]WeYhO0
+R3
+R0
+w1733033949
+8Waveform1.vwf.vt
+FWaveform1.vwf.vt
+!i122 29
+L0 30 48
+R4
+r1
+!s85 0
+31
+R5
+!s107 Waveform1.vwf.vt|
+!s90 -work|work|Waveform1.vwf.vt|
+!i113 1
+R6
+R7
+n@random@number@generator_vlg_vec_tst
