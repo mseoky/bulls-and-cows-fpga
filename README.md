@@ -2,6 +2,11 @@
 
 > **Note:** This project was developed as a term project for the **LOGIC CIRCUIT DESIGN & LAB** course at Pusan National University (December 2024, about 2 weeks).
 
+## 팀원
+
+- 부산대학교 21학번 윤민석
+- 부산대학교 23학번 장대규
+
 ## 📺 시연 영상 (Demo Video)
 [![Bulls and Cows FPGA Demo](https://img.youtube.com/vi/KwwTgyxvh78/0.jpg)](https://youtu.be/KwwTgyxvh78)
 
